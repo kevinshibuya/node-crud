@@ -3,10 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const MongoClient = require('mongodb').MongoClient;
-<<<<<<< HEAD
 var ObjectId = require('mongodb').ObjectID;
-=======
->>>>>>> cbfc65e8ef37f67091038defe25cc441827ec624
 
 const uri = "mongodb+srv://omnistack:omnistack@omnistack9-0g2sc.mongodb.net/test?retryWrites=true&w=majority";
 
@@ -47,7 +44,6 @@ app.post('/show', (req, res) => {
         res.redirect('/show');
     });
 });
-<<<<<<< HEAD
 
 app.route('/edit/:id')
 .get((req, res) => {
@@ -88,5 +84,3 @@ app.route('/delete/:id')
         res.redirect('/show');
     });
 })
-=======
->>>>>>> cbfc65e8ef37f67091038defe25cc441827ec624
