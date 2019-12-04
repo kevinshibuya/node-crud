@@ -11,7 +11,7 @@ MongoClient.connect(uri, (err, client) => {
     if (err) return console.log(err);
     db = client.db('crud-node');
 
-    app.listen(3000, () => {
+    app.listen(process.env.PORT || 3000, () => {
         console.log('Connected to server on port 3000');
     });
 });
