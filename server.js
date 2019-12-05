@@ -16,16 +16,22 @@ MongoClient.connect(uri, (err, client) => {
     });
 });
 
+app.use(express.static(__dirname + '/public'));
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.render('index.ejs');
-})
+});
 
 app.get('/', (req, res) => {
     let cursor = db.collection('data').find();
+});
+
+app.get('/register', (req, res) => {
+    res.render('register.ejs');
 });
 
 app.get('/show', (req, res) => {
@@ -57,13 +63,13 @@ app.route('/edit/:id')
 })
 .post((req, res) => {
     var id = req.params.id;
-    var name = req.body.name;
-    var surname = req.body.surname;
+    var title = req.body.title;
+    var about = req.body.about;
 
     db.collection('data').updateOne({ _id: ObjectId(id) }, {
         $set: {
-            name: name,
-            surname: surname
+            title: title,
+            about: about
         }
     }, (err, result) => {
         if (err) return console.log(err);

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #2C2F47;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    background-color: #fff;
+    color: #202233;
+    padding: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.title h2 {
+    font-size: 55px;
+}
+
+.title p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #202233;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.content p {
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.content button {
+    background-color: #151621;
+    border-radius: 15px;
+    padding: 10px 80px;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.content a:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+/*===========================================================================================================*/
+
+.list {
+    width: 500px;
+}
+
+.list .title-list {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.list .todo {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 130px 10px 20px;
+    border: none;
+    color: #202233;
+    font-size: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.todo h2 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+.todo p {
+    font-family: 'Montserrat', sans-serif!important;
+    word-break: break-all;
+}
+
+.todo .todo-links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px;
+}
+
+.todo .todo-links a {
+    color: #202233;
+}
+
+.todo .todo-links span a {
+    color: #CC2F2F!important;
+}
+
+.list button {
+    background-color: #151621;
+    border-radius: 15px;
+    width: 500px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.list button:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+/*===========================================================================================================*/
+
+.register {
+    width: 500px;
+}
+
+.register h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register form input, .register textarea {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #2C2F47;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.register form .message {
+    height: 80px;
+}
+
+.register button {
+    background-color: #151621;
+    border-radius: 15px;
+    width: 500px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.register button:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+/*===========================================================================================================*/
+
+.edit {
+    width: 500px;
+}
+
+.edit h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.edit form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit form input, .edit textarea {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #2C2F47;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.edit form .message {
+    height: 80px;
+}
+
+.edit button {
+    background-color: #151621;
+    border-radius: 15px;
+    width: 240px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.edit button a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.edit .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit button:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}

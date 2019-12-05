@@ -2,27 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>My CRUD in NodeJS</title>
+        <title>TO DO</title>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <h2>Registros<h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <td>Nome</td>
-                    <td>Sobrenome</td>
-                </tr>
-            </thead>
-            <tbody>
+        <div class="list">
+            <h2 class="title-list">To do list<h2>
             <% data.forEach(function(details) { %>
-                <tr>
-                    <td><%= details.name %></td>
-                    <td><%= details.surname %></td>
-                    <td><a href="/edit/<%= details._id %>">Editar</a> - <a href="/delete/<%= details._id %>">Deletar</a></td>
-                </tr>
-                <% }) %>
-            </tbody>
-            <button><a href="/">Voltar</a></button>
-        </table>
+                <div class="todo">
+                    <div class="todo-content">
+                        <h2 class="todo-title"><%= details.title %></h2>
+                        <p class="todo-about"><%= details.about %></p>
+                    </div>
+                    <div class="todo-links">
+                        <a href="/edit/<%= details._id %>">Editar</a> - <span><a href="/delete/<%= details._id %>">Deletar</a></span>
+                    </div>
+                </div>
+            <% }) %>
+            <a href="/register"><button>Adicionar</button></a>
+        </div>
     </body>
 </html>

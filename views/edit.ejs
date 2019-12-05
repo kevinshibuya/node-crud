@@ -2,18 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>My CRUD in NodeJS</title>
+        <title>TO DO</title>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <h2>Editar Registro<h2>
-        <% data.forEach(function(details) { %>
-            <form action="/edit/<%= details._id %>" method="POST">
-                <input type="text" value="<%= details.name %>" name="name">
-                <input type="text" value="<%= details.surname %>" name="surname">
-                <br>
-                <button><a href="/show">Voltar</a></button>
-                <button type="submit">Salvar</button>
-            </form>
-        <% }) %>
+        <div class="edit">
+            <h2>Editar to do<h2>
+            <% data.forEach(function(details) { %>
+                <form action="/edit/<%= details._id %>" method="POST">
+                    <input type="text" value="<%= details.title %>" name="title">
+                    <textarea class="message" placeholder="Sobre" name="about"><%= details.about %></textarea>
+                    <div class="buttons">
+                        <button class="btn-1"><a href="/show">Voltar</a></button>
+                        <button class="btn-2" type="submit">Salvar</button>
+                    </div>
+                </form>
+            <% }) %>
+        </div>
     </body>
 </html>
